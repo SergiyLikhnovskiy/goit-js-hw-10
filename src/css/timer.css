@@ -1,0 +1,64 @@
+.timer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.field .value {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.datetime-picker-input {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #4e75ff;
+  border-radius: 4px;
+  width: 280px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-top: 40px;
+}
+.start-button {
+  display: inline-block;
+  gap: 10px;
+  border-radius: 8px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: #6c8cff;
+  }
+}
+.start-button:disabled {
+  color: #989898;
+  background-color: #cfcfcf;
+}
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+.container-input {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
