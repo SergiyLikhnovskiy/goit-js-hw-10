@@ -2,6 +2,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import errorIcon from '../img/error.png';
 const refs = {
   pickerEl: document.querySelector('#datetime-picker'),
   startBtn: document.querySelector('[data-start]'),
@@ -56,7 +57,7 @@ const options = {
         backgroundColor: '#ef4040',
         messageColor: '#fff',
         progressBarColor: '#fff',
-        iconUrl: './img/error.png',
+        iconUrl: errorIcon,
       });
     } else {
       refs.startBtn.disabled = false;

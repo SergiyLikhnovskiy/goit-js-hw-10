@@ -1,5 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import errorIcon from '../img/error.png';
+import checkIcon from '../img/check.png';
 const refs = {
   formEl: document.querySelector('.form'),
 };
@@ -29,7 +31,7 @@ refs.formEl.addEventListener('submit', event => {
         position: 'topRight',
         messageColor: '#ffffff',
         backgroundColor: '#59a10d',
-        iconUrl: './img/check.png',
+        iconUrl: checkIcon,
       });
     })
     .catch(delay => {
@@ -40,7 +42,7 @@ refs.formEl.addEventListener('submit', event => {
         message: `Rejected promise in ${delay}ms`,
         position: 'topRight',
         backgroundColor: '#ef4040',
-        iconUrl: './img/error.png',
+        iconUrl: errorIcon,
       });
     });
   form.reset();
