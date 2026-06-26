@@ -46,12 +46,13 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     const chosenData = selectedDates[0];
-    if (chosenData < new Date()) {
+    if (chosenData <= new Date()) {
+      refs.startBtn.disabled = true;
+      userSelectedDate = null;
       iziToast.error({
         title: 'Error',
         titleColor: '#fff',
         class: 'iziToast',
-
         message: 'Please choose a date in the future',
         position: 'topRight',
         backgroundColor: '#ef4040',
