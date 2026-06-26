@@ -29,7 +29,7 @@ refs.formEl.addEventListener('submit', event => {
         position: 'topRight',
         messageColor: '#ffffff',
         backgroundColor: '#59a10d',
-        iconUrl: '../img/check.png',
+        iconUrl: '/img/check.png',
       });
     })
     .catch(delay => {
@@ -40,7 +40,7 @@ refs.formEl.addEventListener('submit', event => {
         message: `Rejected promise in ${delay}ms`,
         position: 'topRight',
         backgroundColor: '#ef4040',
-        iconUrl: '../img/error.png',
+        iconUrl: '/img/error.png',
       });
     });
   form.reset();
