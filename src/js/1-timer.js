@@ -56,7 +56,7 @@ const options = {
         backgroundColor: '#ef4040',
         messageColor: '#fff',
         progressBarColor: '#fff',
-        iconUrl: '/img/error.png',
+        iconUrl: './img/error.png',
       });
     } else {
       refs.startBtn.disabled = false;
